@@ -216,6 +216,8 @@ body{
 }
 
 .social-link {
+    width: 20px; 
+    height: 20px;
     fill: var(--fill-socials); 
 }
 
@@ -250,6 +252,8 @@ body{
 }
 
 .our-clients-link {
+    width: 170px;
+    height: 92px;
     fill: var(--fill-socials);
 
 }
@@ -295,6 +299,7 @@ img{
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
+    width: 370;
 }
 
 .our-team{
@@ -306,6 +311,7 @@ img{
 .our-team-card{
     padding-bottom: 30px;
     margin-right: 0;
+    width: 270px;
     
 }
 
@@ -747,6 +753,8 @@ ul{
 }
 
 .social-link-footer {
+    width: 20px;
+    height: 20px;
     fill: var(--secont-title-text-color);
 }
 
@@ -776,14 +784,22 @@ ul{
     margin-left: 70px;
 } 
 
-.is-hidden{
+.backdrop .is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop{
     position: fixed;
     left: 0;
     top:0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
-    pointer-events: ;
+    opacity: 1;
+    visibility: visible;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visbility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
