@@ -784,12 +784,6 @@ ul{
     margin-left: 70px;
 } 
 
-.backdrop .is-hidden{
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .backdrop{
     position: fixed;
     left: 0;
@@ -799,7 +793,13 @@ ul{
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visbility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal{
