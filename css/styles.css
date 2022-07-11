@@ -209,11 +209,13 @@ body{
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-item{
     width: 44px;
     height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link {
